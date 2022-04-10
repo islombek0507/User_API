@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-dars</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+     
+  <div class="container m-auto text-center border-2 border-bottom mb-1 ">
+      <h2>Users API</h2>
+  </div>
+    <div class="container m-auto row  d-lg-flex">
+        <div class="col-lg-4 user border-1 border-danger border-end ">
+         
+            <h3>User</h3>
+            <p class="h5">Count of users: <span class="count__user"></span></p>
+
+            <ul class="user__list list-group p-0 m-0">
+               
+            </ul>
+        </div>
+
+
+        <div class="col-lg-4 post border-info  border-end">
+            <h3>User</h3>
+            <p class="h5">Count of posts: <span class="count__post"></span></p>
+           <ul class="post__list">
+          
+           </ul>
+        </div>
+
+
+        <div class="col-lg-4 comment border-secondary ">
+            <h3>User</h3>
+            <p class="h5">Count of comments: <span class="count__commit"></span></p>
+<ul class="commint__list">
+   
+</ul>
+        </div>
+
+    </div>
+
+
+    <template id="user__template">
+        <li class="border border-1 border-danger user__item m-0 p-0 mb-2">
+            <p class="user__name text-decoration-underline text-info h5">Islombek Murodillayev</p>
+            
+            <p class="text-black fw-bold m-0">Email: <span class="gmail__user text-info text-decoration-underline ">islom@gmail.com</span></p>
+           <p class="text-black fw-bold m-0">Country: <span class="countr__user fw-lighter">Toshkent</span></p>
+           <p class="text-black fw-bold m-0">Company: <span class="company__user fw-lighter">Akfa</span></p>
+           <p class="text-black fw-bold m-0">Company: <a class="website__user ">Akfa</a></p>
+         </li>
+    </template>
+
+    <template id="post__template">
+        <li class="border border-1 border-info user__item mb-2">
+            <p class="post__name text-decoration-underline text-info h5">Islombek Murodillayev</p>
+            
+            <p class="text-black fw-bold m-0">Post: <span class="text__post fw-lighter ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem ea hic rem rerum odio quas voluptates exercitationem veritatis archite</span></p>
+           
+         </li>
+    </template>
+  <template id="comment__template">
+    <li class="border border-1 border-secondary user__item mb-2">
+        <p class="comment__name text-decoration-underline text-info h5">Islombek Murodillayev</p>
+        
+        <p class="text-black fw-bold m-0">Email: <span class="gmail__comment text-info text-decoration-underline ">islom@gmail.com</span></p>
+        <p class="text-black fw-bold m-0">Comments: <span class="text__comment fw-lighter ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem ea hic rem rerum odio quas voluptates exercitationem veritatis archite</span></p>
+      
+     </li>
+  </template>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
